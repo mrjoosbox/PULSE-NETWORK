@@ -18,7 +18,7 @@
     <div class="buttons-container">
         <h1>PULSE HUB</h1>
         <h2>PULSE HUB is a html file that serves as a central hub for accessing various game websites aswell as proxies.</h2>
-        <button class="button" onclick="location.href='https://drive.google.com/uc?export=download&id=1XL6ZnGpbKF_9UKrkXWYx7nEjnTw3Q-6P'">Download <br> PULSE HUB</button>
+        <button class="button" onclick="downloadFile()">Download <br> PULSE HUB</button>
         <button class="button" onclick="location.href='method.html'">PULSE HUB Data: method</button>
     </div>
     <div class="content">
@@ -78,7 +78,19 @@
         <p>if you own one of these sites then DM me if u want it off<br>
         i am fine with people editing the file as long as i have CREDIT IN THE FILE in some way weather it is as just text or a link somewhere to my discord server/website</p>
     </div>
+    <script>
+        function downloadFile() {
+        const link = document.createElement('a');
+        link.href = 'HUB/PULSE_HUB-V1.html';
+        link.download = 'PULSE_HUB-V1.html';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        }
+    </script>
+
 
 </body>
 
 </html>
+
