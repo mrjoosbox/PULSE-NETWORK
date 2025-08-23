@@ -1,0 +1,26 @@
+<a href="javascript:(function(){
+  let html = 
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Blob Page</title>
+      <style>
+        body {
+          background:#a8d5e2;
+          font-family:sans-serif;
+          text-align:center;
+          padding:40px;
+        }
+        h1 { font-size:3em; }
+      </style>
+    </head>
+    <body>
+      <h1>Hosted in a Blob 🚀</h1>
+      <p>This entire page lives inside a <b>blob:</b> URL.</p>
+    </body>
+  </html>;
+
+  let blob = new Blob([html], {type:"text/html"});
+  let url = URL.createObjectURL(blob);
+  window.location.href = url;
+})();">Blob Page</a>
